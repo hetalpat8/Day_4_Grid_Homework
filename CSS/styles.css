@@ -1,0 +1,85 @@
+.grid-wrapper{
+    /*display a grid using this class*/
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    /* grid-template-rows == gridRow
+       grid-template-columns == gridColumns
+    */
+    grid-template-rows: 1fr 3fr .6fr;
+    grid-template-columns: 3fr 3fr 1.5fr;
+    grid-template-areas:
+        "header     header    rightbar"
+        "squareone  squaretwo rightbar"
+        "footer     footer    footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: rgb(202, 213, 243);
+    
+    
+}
+
+.squareone{
+    grid-area: squareone;
+    background-color: rgb(202, 213, 243);
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.squaretwo{
+    grid-area: squaretwo;
+    background-color: rgb(202, 213, 243);
+    margin-top: 10px;
+
+}
+
+.rightbar{
+    grid-area: rightbar;
+    background-color: rgb(202, 213, 243);
+    margin-left: 10px;
+    margin-right: 16px;
+    
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgb(202, 213, 243);
+    margin-top: 10px;
+    margin-bottom: 17px;
+    margin-right: 16px;
+}
+
+h4{
+    text-align: center;
+
+}
+
+
+h1{
+    position: relative;
+    left: 20px; 
+
+}
+
+h3{
+    position: relative;
+    left: 20px; 
+}
+
+h6{
+    position: relative;
+    left: 10px;
+}
+
+p{
+    position: relative;
+    left: 5px;
+}
+
+h5{
+    position: relative;
+    text-align: center;
+    font-size: large; 
+}
